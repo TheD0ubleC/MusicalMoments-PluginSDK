@@ -45,6 +45,7 @@ public class PluginSDK
     {
         return Get("api/toggleStreamKey");
     }
+    // 获取VB音量
     public int GetVBVolume()
     {
         int volume;
@@ -57,6 +58,7 @@ public class PluginSDK
             return 0;
         }
     }
+    // 获取物理设备音量
     public int GetVolume()
     {
         int volume;
@@ -69,6 +71,7 @@ public class PluginSDK
             return 0;
         }
     }
+    // 获取提示音量
     public int GetTipsVolume()
     {
         int volume;
@@ -81,6 +84,18 @@ public class PluginSDK
             return 0;
         }
     }
+    // 获取音频列表信息 参数需输入类型 json, xml, text 的其中一个 不接受空参数
+    public string GetListViewInfo(string responseType)
+    {
+        return Get($"api/listViewInfo?type={responseType}");
+    }
+
+    // 尝试播放指定名称的音频 参数需输入音频名称 不接受空参数 播放成功将返回字符串形式的bool值
+    public string PlayAudio(string audioName)
+    {
+        return Get($"api/playAudio?name={Uri.EscapeDataString(audioName)}");
+    }
+    
     private string Get(string relativeUrl)
     {
         string url = _serverAddress + relativeUrl;
