@@ -3,7 +3,7 @@
 
 你可以调用这些 API 来获取 MusicalMoments 的各种数据
 
-详情示例可看 MMPluginSDKExample
+详情示例可看 [MMPluginSDKExample](https://github.com/TheD0ubleC/MusicalMoments-PluginSDK/releases)。
 # 获取输入
 首先需要获取 Main 函数输入的第一个参数（API 地址），如下所示：
 ``` C#
