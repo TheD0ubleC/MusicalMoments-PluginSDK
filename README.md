@@ -1,7 +1,7 @@
 # 简介
 [MusicalMoments](https://github.com/TheD0ubleC/MusicalMoments) 插件 API 使用 TCP Sockets 获取数据，因此需要发送 Get 请求。
 
-你可以调用这些 API 来获取 MusicalMoments 的各种数据，但目前暂未开放参数型 API。
+你可以调用这些 API 来获取 MusicalMoments 的各种数据
 
 详情示例可看 MMPluginSDKExample
 # 获取输入
